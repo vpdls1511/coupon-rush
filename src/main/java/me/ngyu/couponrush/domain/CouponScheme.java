@@ -25,4 +25,13 @@ public class CouponScheme {
     private LocalDateTime createdAt;
     @LastModifiedDate
     private LocalDateTime updatedAt;
+
+    public static CouponScheme create(String name, int totalQuantity) {
+        CouponScheme scheme = new CouponScheme();
+        scheme.name = name;
+        scheme.totalQuantity = totalQuantity;
+        scheme.issuedQuantity = 0;
+        scheme.active = true;
+        return scheme;
+    }
 }
