@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: coupon-rush
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema.sql
